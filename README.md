@@ -4,7 +4,7 @@
 
 ### 2. В терминале по очереди ввести следующие команды:
 
-    cd  Simple-SR
+    cd  DL_lab
 
     docker build -t test .
 
