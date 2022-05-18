@@ -129,7 +129,7 @@ if __name__ == '__main__':
                 output = tensor2img(output)
                 if args.output_path:
                     output_path = os.path.join(args.output_path, img_name)
-                    cv2.imwrite(output_path, output)
+                    cv2.imwrite('urimg.png', output)
 
                 if args.gt_path:
                     output = output.astype(np.float32) / 255.0
@@ -227,7 +227,7 @@ if __name__ == '__main__':
 
     print('\n')
     mypic = dhash(Image.open('myimg.png'))
-    urpic = dhash(Image.open('demo/SISR/output/LR_imgs/' +  '0826x4.png'))
+    urpic = dhash(Image.open('urimg.png'))
     if mypic==urpic:
         print('CORRECT!')
     else:
