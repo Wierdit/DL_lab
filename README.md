@@ -6,6 +6,8 @@
 
     cd  DL_lab
 
-    docker build -t test .
+    docker build -t lab1 .
 
-    docker run test
+    docker run --name lab11 lab1
+    
+    docker cp lab11:urimg.png .
